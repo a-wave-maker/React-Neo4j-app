@@ -1,0 +1,157 @@
+@import "~bootstrap/scss/bootstrap";
+
+$shadow-color: blue;
+
+@mixin image-shadow {
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px $shadow-color;
+  }
+}
+
+@mixin inline-children {
+  & > * {
+    display: inline;
+    margin-right: 1rem;
+  }
+}
+
+@mixin link-style {
+  &:hover {
+    cursor: pointer;
+    color: blue
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.clickable {
+  @include link-style()
+}
+
+.container {
+  margin-top: 1rem;
+}
+
+.container-normal {
+  margin-top: 0;
+}
+
+.children-inline {
+  @include inline-children();
+}
+
+.fav-button {
+  margin: 7px;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-screen {
+  height: 80vh;
+  width: 80vw;
+}
+
+.grid-img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.hoverable-big:hover {
+  scale: 110%;
+}
+
+.hoverable-small:hover {
+  scale: 102%;
+}
+
+img {
+  @include image-shadow();
+}
+
+.main-image {
+  max-height: 25rem;
+  object-fit: contain;
+}
+
+.no-hover:hover {
+  cursor: default;
+  box-shadow: none;
+}
+
+.padded {
+  padding: 1rem;
+}
+
+.rating:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.related-img {
+  max-height: 150px; 
+  object-fit: cover;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  margin-top: 1rem;
+}
+
+.container-normal {
+  margin-top: 0;
+}
+
+.children-inline {
+  @include inline-children();
+}
+
+.full-screen {
+  height: 80vh;
+  width: 80vw;
+}
+
+
+.rating:hover {
+  cursor: pointer;
+  color: rgb(102, 102, 255);
+}
+
+.toggled {
+  
+  color: rgb(99, 99, 255); 
+}
+
+.toggled:hover {
+  cursor: pointer;
+  color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version */
+}
+
+.hoverable-big:hover {
+  cursor: pointer;
+  scale: 110%;
+}
+
+.hoverable-small:hover {
+  cursor: pointer;
+  scale: 102%;
+}
+
+
+@import "~bootstrap/scss/bootstrap";
