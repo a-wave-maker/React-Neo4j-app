@@ -1,1 +1,3 @@
-This is a university project for Databases and Frontend Development projects. It combines React for the frontend and Neo4j for data handling.
+This is a university project. 
+
+It combines React for the frontend and a Neo4j database for data handling.
